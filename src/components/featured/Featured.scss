@@ -1,0 +1,133 @@
+.featured {
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  background-color: #013914;
+  color: white;
+  background-color: #D9AFD9;
+background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+
+  .container {
+    width: 1400px;
+    display: flex;
+    align-items: center;
+    
+
+
+    .left {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      color: black;
+
+      h1 {
+        font-size: 50px;
+
+        span {
+          font-style: italic;
+          font-weight: 300;
+        }
+      }
+
+      .search {
+        background-color: white;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        overflow: hidden;
+
+        .searchInput {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          img {
+            width: 20px;
+            height: 20px;
+            margin: 10px;
+          }
+
+          input {
+            border: none;
+            outline: none;
+
+            &::placeholder {
+              color: gray;
+            }
+          }
+        }
+
+        button {
+          width: 120px;
+          height: 50px;
+          border: none;
+          background-color: #fc00ff;
+          color: white;
+          align-self: flex-end;
+          cursor: pointer;
+        }
+      }
+
+      .popular {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        span {
+          width: max-content;
+        }
+
+        button {
+          width: max-content;
+          color: white;
+          border: 1px solid white;
+          padding: 5px 10px;
+          border-radius: 20px;
+          background-color: transparent;
+          font-size: 14px;
+        }
+        button:hover{
+          color: #013914;
+          background-color: rgba(231, 236, 240,0.5);
+        }
+      }
+    }
+
+    .right {
+      height: 100%;
+   margin-left:60px;
+      width:70%;
+      background-size: cover;
+      animation: image 15s infinite normal;
+      animation-timing-function: ease-in;
+      @keyframes image {
+        0% {
+          background-image: url('../../../img/person1.png');
+        }
+        20%{
+          background-image: url('../../../img/person2.png');
+        
+        }
+        40%{
+         
+            background-image: url('../../../img/person3.png');
+          }
+        60%{
+          background-image: url('../../../img/person4.png');
+        }
+        80% {
+          background-image: url('../../../img/person5.png');
+          
+        }
+        100%{
+          background-image: url('../../../img/person6.png');
+        }
+      }
+
+      // img {
+      //   height: 100%;
+      //   object-fit: contain;
+      // }
+    }
+  }
+}
